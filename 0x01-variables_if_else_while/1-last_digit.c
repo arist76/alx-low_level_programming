@@ -12,11 +12,12 @@
 int main(void)
 {
 	int n;
+	int remainder;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
-	int remainder; 
+
 	remainder = n % 10;
 
 	if (remainder > 5)

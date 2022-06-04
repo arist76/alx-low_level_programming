@@ -13,7 +13,7 @@ int main(void)
 
 	b = 122;
 
-	for (a = 97; a <= b; a++) 
+	for (a = 97; a <= b; a++)
 	{
 		putchar(a);
 	}

@@ -24,15 +24,8 @@ int main(void)
 				putchar(start1);
 				putchar(start2);
 				putchar(start3);
-				if (start1 == 58 && start2 == 56 && start3 == 57)
-				{
-					putchar('\n');
-				}
-				else
-				{
-					putchar(',');
-					putchar(' ');
-				}
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}

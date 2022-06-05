@@ -24,6 +24,7 @@ int main(void)
 			if (start1 == 56 && start2 == 57)
 			{
 				putchar('\n');
+				return (0);
 			}
 			else
 			{
@@ -32,5 +33,4 @@ int main(void)
 			}
 		}
 	}
-	return (0);
 }

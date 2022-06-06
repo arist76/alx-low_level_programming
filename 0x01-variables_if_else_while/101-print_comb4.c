@@ -24,11 +24,17 @@ int main(void)
 				putchar(start1);
 				putchar(start2);
 				putchar(start3);
-				putchar(',');
-				putchar(' ');
+				if (start1 == 55 && start2 == 56 && start3 == 57)
+				{
+					continue;
+				}
+				else
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
-	putchar('\n');
 	return (0);
 }

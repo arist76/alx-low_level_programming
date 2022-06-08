@@ -1,9 +1,17 @@
 #include "main.h"
 
+/**
+ * main - prints putchar
+ *
+ * Return: returns 0
+ */
+
+
 int main(void)
 {
+	int i;
 	char x[8] = {95, 112, 117, 116, 99, 104, 97, 114};
-	int i, j;
+
 
 	for (i = 0; i <= 7; i++)
 	{

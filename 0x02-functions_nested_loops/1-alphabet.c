@@ -1,3 +1,5 @@
+include "_putchar.c"
+
 /**
  * print_alphabet - prints the alphabet in lowercase
  * Return: does not have any return statement

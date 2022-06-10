@@ -1,40 +1,22 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
- * more_numbers - prints numbers upto 14
+ * more_numbers - prints numbers between 0 to 14
+ * 10 times.
+ * Return: no return.
  */
-
 void more_numbers(void)
 {
-	int counter;
-	int s;
-	int d;
-	int is_two;
+	int i, ch;
 
-	is_two = 0;
-
-	for (counter = 1; counter <= 10; counter++)
+	for (i = 0; i < 10; i++)
 	{
-		for (s = 48; s <= 57; s++)
+		for (ch = 0; ch < 15; ch++)
 		{
-			if (is_two != 0)
-			{
-				_putchar('1');
-			}
-
-			_putchar(s);
-
-			if (s == 57)
-			{
-				s = 48;
-				is_two = 1;
-			}
-			else if (s == 52 && is_two != 0)
-			{
-				break;
-			}
+			if (ch >= 10)
+				_putchar((ch / 10) + 48);
+			_putchar((ch % 10) + 48);
 		}
 		_putchar('\n');
-		is_two = 0;
 	}
 }

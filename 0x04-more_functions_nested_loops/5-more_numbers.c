@@ -19,10 +19,10 @@ void more_numbers(void)
 		{
 			if (is_two != 0)
 			{
-				putchar('1');
+				_putchar('1');
 			}
 
-			putchar(s);
+			_putchar(s);
 
 			if (s == 57)
 			{
@@ -34,7 +34,7 @@ void more_numbers(void)
 				break;
 			}
 		}
-		putchar('\n');
+		_putchar('\n');
 		is_two = 0;
 	}
 }

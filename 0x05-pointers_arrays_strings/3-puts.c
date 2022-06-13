@@ -14,7 +14,7 @@ void _puts(char *str)
 	c = 0;
 	while (*(str + c) != '\0')
 	{
-		putchar(*(str + c));
+		_putchar(*(str + c));
 		c++;
 	}
 }

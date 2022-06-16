@@ -1,22 +1,27 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
- * print_rev - prints a string, in reverse, followed by a new line.
- * @s: input string.
- * Return: no return.
+ * _strcat - concatenates two strings,
+ * @dest: destination.
+ * @src: source.
+ * Return: the pointer to dest.
  */
-void print_rev(char *s)
+char *_strcat(char *dest, char *src)
 {
-	int count = 0;
+	int count = 0, count2 = 0;
 
-	while (count >= 0)
+	while (*(dest + count) != '\0')
 	{
-		if (s[count] == '\0')
-			break;
 		count++;
 	}
 
-	for (count--; count >= 0; count--)
-		_putchar(s[count]);
-	_putchar('\n');
+	while (count2 >= 0)
+	{
+		*(dest + count) = *(src + count2);
+		if (*(src + count2) == '\0')
+			break;
+		count++;
+		count2++;
+	}
+	return (dest);
 }

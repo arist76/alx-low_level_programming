@@ -3,7 +3,7 @@
  * main - prints all CLAs
  * @argc: size of argv
  * @argv: CMAs
- * Return: returns 1
+ * Return: returns 0
  */
 int main(int argc, char **argv)
 {
@@ -12,5 +12,5 @@ int main(int argc, char **argv)
 		printf("%s\n", *argv++);
 	}
 
-	return (1);
+	return (0);
 }

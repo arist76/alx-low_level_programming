@@ -26,12 +26,12 @@ int main(int argc, char *argv[])
 				if (!isdigit(argv[x][y]))
 				{
 					puts("Error");
-					return (0);
+					return (1);
 				}
 				sum += atoi(argv[x]);
 			}
 		}
 		printf("%d\n", sum);
 	}
-	return (1);
+	return (0);
 }

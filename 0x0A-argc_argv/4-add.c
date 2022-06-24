@@ -1,37 +1,34 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
+
 /**
- * main - finds the sum
- * @argc: size of argv
- * @argv: CLAs
- * Return: returns 0 if there CMA error and 1 otherwise
+ * main - Prints the addition of positive numbers,
+ *        followed by a new line.
+ * @argc: The number of arguments passed to the program.
+ * @argv: An array of pointers to the arguments.
+ *
+ * Return: If one of the numbers contains symbols that are non-digits - 1.
+ *         Otherwise - 0.
  */
 int main(int argc, char *argv[])
 {
-	int x, y, sum;
+	int num, digit, sum = 0;
 
-
-	if (argc == 1)
+	for (num = 1; num < argc; num++)
 	{
-		putchar('0');
-	}
-	else
-	{
-		sum = 0;
-		for (x = 1; x < argc; x++)
+		for (digit = 0; argv[num][digit]; digit++)
 		{
-			for (y = 0; argv[x][y] != '\0'; y++)
+			if (argv[num][digit] < '0' || argv[num][digit] > '9')
 			{
-				if (!isdigit(argv[x][y]))
-				{
-					puts("Error");
-					return (1);
-				}
-				sum += atoi(argv[x]);
+				printf("Error\n");
+				return (1);
 			}
 		}
-		printf("%d\n", sum);
+
+		sum += atoi(argv[num]);
 	}
+
+	printf("%d\n", sum);
+
 	return (0);
 }

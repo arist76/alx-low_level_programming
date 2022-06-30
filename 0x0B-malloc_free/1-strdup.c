@@ -14,14 +14,17 @@ char *_strdup(char *str)
 
 	/* find the size of str */
 	size = 0;
-	while (str[size] != '\0')
+	if (str == NULL)
+		return (NULL);
+
+	while (str[size + 1] != '\0')
 	{
 		size++;
 	}
 
 	/* allocate memory */
 	cpy = (char *) malloc(size);
-	if (cpy == NULL || size == 0)
+	if (cpy == NULL)
 	{
 		return (NULL);
 	}

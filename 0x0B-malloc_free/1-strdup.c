@@ -17,7 +17,7 @@ char *_strdup(char *str)
 	if (str == NULL)
 		return (NULL);
 
-	while (str[size + 1] != '\0')
+	while (str[size - 1] != '\0')
 	{
 		size++;
 	}

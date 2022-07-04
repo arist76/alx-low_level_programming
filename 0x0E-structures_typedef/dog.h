@@ -1,6 +1,8 @@
 #ifndef _DOG_H_
 #define _DOG_H_
 
+typedef struct dog dog_t;
+
 /**
  * struct dog - represents a dog
  * @name: the name of the dog

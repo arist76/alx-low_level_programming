@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 /**
  * init_dog - creates a dog
  * @d: the structure of the dog

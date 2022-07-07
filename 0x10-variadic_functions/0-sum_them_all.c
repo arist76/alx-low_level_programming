@@ -1,5 +1,11 @@
 #include <stdarg.h>
 
+/**
+ * sum_them_all - adds up integers
+ * @n: number of integers given
+ *
+ * Return: sum of integers
+ */
 int sum_them_all(const unsigned int n, ...)
 {
 	unsigned int i;

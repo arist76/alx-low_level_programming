@@ -25,14 +25,22 @@ int main(void)
 		{
 			for (c = a; c <= end; c++)
 			{
-				for (d = b + 1; d <= end; d++)
+				for (d = b + 1; d <= end + 1; d++)
 				{
 					putchar(a);
 					putchar(b);
 					putchar(' ');
-					putchar(c);
-					putchar(d);
-					if (a == end && b == end - 1 && c == end && d == end)
+					if (d == end + 1)
+					{
+						putchar(c + 1);
+						putchar(0);
+					}
+					else
+					{
+						putchar(c);
+						putchar(d);
+					}
+					if (a == end && b == end - 1 && c == end && d == 0)
 					{
 						break;
 					}
